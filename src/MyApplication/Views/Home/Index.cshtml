@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <p>
+        <a class="btn btn-danger" asp-action="RegisterWithoutTransaction">Register without Transaction</a>
+    </p>
+    <p>
+        <a class="btn btn-success" asp-action="RegisterWithUnitOfWork">Register with Unit of Work</a>
+    </p>
+    <p>
+        <a class="btn btn-danger" asp-action="RegisterWithThirdPartyApi2">Register with Third-Party API (without
+            cancellation token)</a>
+    </p>
+    <p><a class="btn btn-success" asp-action="RegisterWithThirdPartyApi">Register with Third-Party API (with
+            cancellation token)</a>
+    </p>
+</div>
